@@ -1,0 +1,395 @@
+@import url(reset.css);
+body {
+  font-family: sofia-pro-soft, Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background: #E5F4F8;
+  max-width: 1300px;
+  margin: 0 50px 50px 50px;
+  color: #212B38; }
+
+header[role=banner] {
+  display: grid;
+  grid-template-columns: 2fr 8fr 1fr;
+  grid-column-gap: 0;
+  position: relative;
+  margin: 0 20px;
+  padding-bottom: 10px; }
+  header[role=banner] a {
+    color: #212B38; }
+  header[role=banner] .logo {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 10px; }
+    header[role=banner] .logo a {
+      display: block;
+      width: 133px;
+      height: 27px;
+      background: url("/images/logo.svg");
+      background-size: cover;
+      text-indent: 100%;
+      white-space: nowrap;
+      overflow: hidden; }
+  header[role=banner] nav {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    header[role=banner] nav ul {
+      margin: 0;
+      padding: 0; }
+    header[role=banner] nav li {
+      display: inline;
+      margin: 0 22px; }
+    header[role=banner] nav a {
+      text-decoration: none;
+      padding: 12px 0;
+      display: inline-block;
+      font-weight: bold;
+      font-size: 1.2em; }
+      header[role=banner] nav a.active {
+        border-top: 3px solid #6BDBFF; }
+      header[role=banner] nav a:hover {
+        border-top: 3px solid #4ECD84; }
+  header[role=banner] .aux {
+    position: absolute;
+    right: 0;
+    top: 0; }
+    header[role=banner] .aux .balance {
+      font-size: 1.3em;
+      font-weight: bold;
+      margin-top: 16px;
+      margin-right: 38px;
+      line-height: 21px; }
+      header[role=banner] .aux .balance .currency {
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        background: url("/images/currency.svg");
+        background-size: cover;
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden; }
+    header[role=banner] .aux .hq {
+      position: absolute;
+      top: 60px;
+      right: -5px;
+      z-index: 2; }
+      header[role=banner] .aux .hq a {
+        background: #212B38;
+        border-radius: 100px;
+        border: 4px solid #E5F4F8;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        color: white;
+        display: block;
+        line-height: 40px; }
+    header[role=banner] .aux .xp {
+      position: absolute;
+      right: -35px;
+      top: 112px;
+      border: 2px solid white;
+      width: 25px;
+      height: 75px;
+      background: #CBE5EC;
+      border-radius: 20px;
+      box-shadow: 0 0 0 5px #E5F4F8; }
+      header[role=banner] .aux .xp .progress {
+        background: #4ECD84;
+        color: white;
+        display: block;
+        height: 50%;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        border-radius: 50px; }
+        header[role=banner] .aux .xp .progress span {
+          font-weight: bold;
+          text-align: center;
+          font-size: .8em;
+          display: block;
+          position: absolute;
+          bottom: 5px;
+          width: 100%; }
+    header[role=banner] .aux .avatar {
+      position: absolute;
+      top: 10px;
+      right: -55px; }
+      header[role=banner] .aux .avatar a {
+        border: 4px solid #E5F4F8;
+        border-radius: 100px;
+        display: block;
+        line-height: 0; }
+        header[role=banner] .aux .avatar a:hover {
+          border-color: #212B38; }
+      header[role=banner] .aux .avatar img {
+        width: 75px;
+        height: 75px;
+        background: #6BDBFF;
+        border-radius: 100px; }
+
+.shell {
+  background: white;
+  border-radius: 20px;
+  width: 100%;
+  min-height: 500px; }
+
+.content:after {
+  content: "";
+  clear: both;
+  display: table; }
+
+.band-listing {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  padding: 50px; }
+  .band-listing .band {
+    text-decoration: none;
+    color: #212B38; }
+    .band-listing .band:hover {
+      cursor: pointer; }
+      .band-listing .band:hover .status {
+        background: #35bd6f; }
+        .band-listing .band:hover .status.active {
+          background: #ffdf44; }
+    .band-listing .band .status {
+      border-radius: 10px;
+      background: #4ECD84;
+      overflow: hidden; }
+      .band-listing .band .status.active {
+        border-radius: 15px 15px 0 0;
+        background: #FFE66D; }
+    .band-listing .band .info {
+      padding: 20px; }
+    .band-listing .band h3 {
+      margin: 0;
+      font-size: 1.4em; }
+    .band-listing .band h4 {
+      margin: 0;
+      font-size: 0.8em; }
+    .band-listing .band h5 {
+      margin: 10px 0 0 0;
+      font-size: 1.1em; }
+    .band-listing .band ul {
+      margin: 0 0 -5px -5%;
+      padding: 0;
+      list-style: none;
+      position: relative;
+      overflow: hidden; }
+      .band-listing .band ul li {
+        display: inline;
+        margin: 0 -12% 0 0;
+        padding: 0; }
+        .band-listing .band ul li img {
+          width: 33%; }
+    .band-listing .band .action {
+      background: #212B38;
+      color: #F7FFF7;
+      border-radius: 0 0 15px 15px;
+      text-align: center;
+      font-size: 1em;
+      padding: 6px 6px 8px 6px; }
+      .band-listing .band .action u {
+        font-weight: bold; }
+
+.profile-header {
+  background: #6BDBFF;
+  padding-top: 10px;
+  padding-right: 25px;
+  padding-left: 10px;
+  border-radius: 20px 20px 0 0; }
+  .profile-header.band-profile {
+    background: #CBE5EC;
+    padding-top: 30px; }
+    .profile-header.band-profile .band-avatar {
+      place-self: end start; }
+      .profile-header.band-profile .band-avatar ul.band-members {
+        margin: 0 0 -3px 0;
+        padding: 0;
+        list-style: none; }
+        .profile-header.band-profile .band-avatar ul.band-members > li {
+          display: inline;
+          margin: 0 -12% 0 0;
+          padding: 0;
+          position: relative;
+          overflow: hidden; }
+          .profile-header.band-profile .band-avatar ul.band-members > li:hover .tooltip {
+            display: block;
+            position: absolute;
+            top: 10px;
+            left: -15px;
+            opacity: 1; }
+          .profile-header.band-profile .band-avatar ul.band-members > li img {
+            width: 33%; }
+    .profile-header.band-profile .info {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-column-gap: 20px; }
+    .profile-header.band-profile .about {
+      display: grid;
+      justify-content: start;
+      align-items: center; }
+      .profile-header.band-profile .about h1 {
+        margin: 0;
+        font-size: 1.8em; }
+      .profile-header.band-profile .about h2 {
+        margin: 0;
+        font-size: 0.8em; }
+      .profile-header.band-profile .about h3 {
+        margin: 10px 0 0 0; }
+  .profile-header .info {
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+    .profile-header .info .avatar {
+      margin-bottom: -4px; }
+      .profile-header .info .avatar img {
+        width: 180px; }
+    .profile-header .info .about {
+      place-self: center start; }
+    .profile-header .info h1 {
+      margin: 0;
+      font-weight: 900;
+      font-size: 2.4em; }
+    .profile-header .info p {
+      margin: 0;
+      font-weight: 300;
+      font-size: .9em; }
+
+@keyframes showTooltip {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+.tooltip {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(33, 43, 56, 0.1);
+  position: relative;
+  width: 150px;
+  top: 0;
+  z-index: 100;
+  display: none;
+  opacity: 0;
+  animation: showTooltip 150ms ease-in-out both; }
+  .tooltip :after {
+    bottom: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: transparent;
+    border-bottom-color: white;
+    border-width: 8px;
+    margin-left: -8px; }
+  .tooltip h6 {
+    text-align: center;
+    margin: 10px 0;
+    padding: 0;
+    font-weight: 900;
+    font-size: 1.2em; }
+  .tooltip .skills {
+    list-style: none;
+    margin: 0;
+    padding: 0 14px 10px 14px;
+    font-size: .7em;
+    font-weight: 300; }
+    .tooltip .skills li {
+      margin-bottom: 5px; }
+      .tooltip .skills li .name {
+        display: block;
+        padding: 0;
+        margin: 0 0 2px 0; }
+  .tooltip .progress {
+    background: #F2F2F2;
+    border-radius: 10px;
+    height: 6px;
+    padding: 0;
+    margin: 0; }
+    .tooltip .progress span {
+      background: #6BDBFF;
+      display: block;
+      height: 6px;
+      border-radius: 10px; }
+    .tooltip .progress.negative span {
+      background: #FF6B6B; }
+
+.actions {
+  background: #F5FBFC;
+  margin: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  display: grid;
+  column-gap: 20px;
+  grid-template-columns: 2fr 3fr;
+  grid-template-rows: 100%; }
+  .actions .action_items {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    grid-column: 1;
+    grid-row: row;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr; }
+    .actions .action_items li {
+      text-align: center; }
+      .actions .action_items li a {
+        color: white;
+        text-decoration: none;
+        background: #4ECD84;
+        display: block;
+        padding: 20px 15px;
+        border-radius: 8px;
+        border: 3px solid #4db479;
+        box-shadow: 0 3px 0 #4db479; }
+        .actions .action_items li a:hover {
+          background: #3ac776;
+          border: 3px solid #45a36d;
+          box-shadow: 0 3px 0 #45a36d; }
+        .actions .action_items li a b {
+          display: block;
+          font-size: 1.8em; }
+        .actions .action_items li a span {
+          font-size: .9em; }
+  .actions .choices {
+    grid-column: 2;
+    grid-row: row;
+    text-align: center; }
+    .actions .choices h4 {
+      margin: 0;
+      padding: 0;
+      font-size: 2em; }
+    .actions .choices h5 {
+      font-size: 1.2em;
+      font-weight: normal;
+      margin: 5px 0;
+      padding: 0; }
+    .actions .choices ul {
+      list-style: none;
+      margin: 15px auto;
+      padding: 0;
+      max-width: 300px; }
+      .actions .choices ul li {
+        margin-bottom: 10px; }
+        .actions .choices ul li a {
+          display: block;
+          padding: 15px;
+          border-radius: 8px;
+          color: white;
+          text-decoration: none;
+          font-weight: bold;
+          font-size: 1.2em;
+          background: #6BDBFF;
+          border: 3px solid #5fcef2;
+          box-shadow: 0 3px 0 #5fcef2; }
+          .actions .choices ul li a:hover {
+            background: #52d5ff;
+            border: 3px solid #47c7f0;
+            box-shadow: 0 3px 0 #47c7f0; }
