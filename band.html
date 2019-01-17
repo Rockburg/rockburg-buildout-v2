@@ -6,187 +6,308 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-LRlmVvLKVApDVGuspQFnRQJjkv0P7/YFrw84YYQtmYG4nK8c+M+NlmYDCv0rKWpG" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.typekit.net/bfh3gim.css">
     <link rel="stylesheet" href="styles/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/trianglify/1.1.0/trianglify.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+    <script src="/javascripts/application-min.js"></script>
   </head>
   <body>
-    <header role="banner">
-      <div class="logo">
-        <a href="#">Rockburg</a>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="#" class="active">Your Bands</a></li>
-          <li><a href="#">Charts</a></li>
-          <li><a href="#">Market</a></li>
-        </ul>
-      </nav>
-      <div class="aux">
-        <div class="balance"><span class="currency">§</span> 1,301,310</div>
-        <div class="info">
-          <div class="hq">
-            <a href="#"><i class="fas fa-building"></i></a>
-          </div>
-          <div class="xp">
-            <div class="progress">
-              <span>XP</span>
+    <div class="wrapper">
+      <header role="banner">
+        <div class="logo">
+          <a href="#">Rockburg</a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#" class="active">Your Bands</a></li>
+            <li><a href="#">Charts</a></li>
+            <li><a href="#">Market</a></li>
+          </ul>
+        </nav>
+        <div class="aux">
+          <div class="balance"><span class="currency">§</span> 1,301,310</div>
+          <div class="info">
+            <div class="hq">
+              <a href="#"><i class="fas fa-building"></i></a>
             </div>
-          </div>
-          <div class="avatar">
-            <a href="#"><img src="https://avataaars.io/?avatarStyle=Transparent&clotheColor=White&clotheType=ShirtVNeck&eyebrowType=RaisedExcitedNatural&facialHairColor=Brown&facialHairType=BeardMagestic&hairColor=Brown&mouthType=Tongue&topType=ShortHairShortFlat" alt="Shpigford"></a>
+            <div class="xp">
+              <div class="progress">
+                <span>XP</span>
+              </div>
+            </div>
+            <div class="avatar">
+              <a href="#"><img src="https://avataaars.io/?avatarStyle=Transparent&clotheColor=White&clotheType=ShirtVNeck&eyebrowType=RaisedExcitedNatural&facialHairColor=Brown&facialHairType=BeardMagestic&hairColor=Brown&mouthType=Tongue&topType=ShortHairShortFlat" alt="Shpigford"></a>
+            </div>
           </div>
         </div>
-      </div>
-    </header>
-    <div class="shell">
-      <div class="content">
-        <section class="profile-header band-profile">
-          <div class="info">
-            <div class="band-avatar">
-              <ul class="band-members">
-                <li>
-                  <img src="http://avataaars.io/?accessoriesType=Prescription02&avatarStyle=Transparent&clotheType=Overall&eyeType=Cry&eyebrowType=UpDownNatural&facialHairType=BeardLight&hairColor=SilverGray&mouthType=Eating&skinColor=Brown&topType=LongHairShavedSides" alt="">
+      </header>
+      <div class="shell">
+        <div class="content">
+          <section class="profile-header band-profile">
+            <div class="info">
+              <div class="band-avatar">
+                <ul class="band-members">
+                  <li>
+                    <img src="http://avataaars.io/?accessoriesType=Prescription02&avatarStyle=Transparent&clotheType=Overall&eyeType=Cry&eyebrowType=UpDownNatural&facialHairType=BeardLight&hairColor=SilverGray&mouthType=Eating&skinColor=Brown&topType=LongHairShavedSides" alt="">
 
-                  <div class="tooltip">
-                    <h6>Barb Dwyer</h6>
-                    <ul class="skills">
-                      <li>
-                        <span class="name">Skill: <strong>59</strong></span>
-                        <div class="progress positive"><span style="width:59%"></span></div>
-                      </li>
-                      <li>
-                        <span class="name">Fatigue: <strong>38</strong></span>
-                        <div class="progress negative"><span style="width:38%"></span></div>
-                      </li>
-                      <li>
-                        <span class="name">Looks: <strong>8</strong></span>
-                        <div class="progress positive"><span style="width:8%"></span></div>
-                      </li>
-                      <li>
-                        <span class="name">Creativity: <strong>18</strong></span>
-                        <div class="progress positive"><span style="width:18%"></span></div>
-                      </li>
-                      <li>
-                        <span class="name">Ego: <strong>72</strong></span>
-                        <div class="progress negative"><span style="width:72%"></span></div>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li>
-                  <img src="http://avataaars.io/?accessoriesType=Sunglasses&avatarStyle=Transparent&clotheColor=Red&clotheType=CollarSweater&eyeType=Side&eyebrowType=UnibrowNatural&facialHairColor=Auburn&facialHairType=Blank&hairColor=PastelPink&mouthType=Serious&skinColor=Pale&topType=LongHairBun" alt="">
+                    <div class="tooltip">
+                      <h6>Barb Dwyer</h6>
+                      <ul class="skills">
+                        <li>
+                          <span class="name">Skill: <strong>59</strong></span>
+                          <div class="progress positive"><span style="width:59%"></span></div>
+                        </li>
+                        <li>
+                          <span class="name">Fatigue: <strong>38</strong></span>
+                          <div class="progress negative"><span style="width:38%"></span></div>
+                        </li>
+                        <li>
+                          <span class="name">Looks: <strong>8</strong></span>
+                          <div class="progress positive"><span style="width:8%"></span></div>
+                        </li>
+                        <li>
+                          <span class="name">Creativity: <strong>18</strong></span>
+                          <div class="progress positive"><span style="width:18%"></span></div>
+                        </li>
+                        <li>
+                          <span class="name">Ego: <strong>72</strong></span>
+                          <div class="progress negative"><span style="width:72%"></span></div>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <img src="http://avataaars.io/?accessoriesType=Sunglasses&avatarStyle=Transparent&clotheColor=Red&clotheType=CollarSweater&eyeType=Side&eyebrowType=UnibrowNatural&facialHairColor=Auburn&facialHairType=Blank&hairColor=PastelPink&mouthType=Serious&skinColor=Pale&topType=LongHairBun" alt="">
 
-                  <div class="tooltip">
-                    <h6>Barb Dwyer</h6>
-                    <ul class="skills">
-                      <li>
-                        <span class="name">Skill: <strong>59</strong></span>
-                        <div class="progress positive"><span style="width:59%"></span></div>
-                      </li>
-                      <li>
-                        <span class="name">Fatigue: <strong>38</strong></span>
-                        <div class="progress negative"><span style="width:38%"></span></div>
-                      </li>
-                      <li>
-                        <span class="name">Looks: <strong>8</strong></span>
-                        <div class="progress positive"><span style="width:8%"></span></div>
-                      </li>
-                      <li>
-                        <span class="name">Creativity: <strong>18</strong></span>
-                        <div class="progress positive"><span style="width:18%"></span></div>
-                      </li>
-                      <li>
-                        <span class="name">Ego: <strong>72</strong></span>
-                        <div class="progress negative"><span style="width:72%"></span></div>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li>
-                  <img src="http://avataaars.io/?accessoriesType=Blank&avatarStyle=Transparent&clotheColor=Blue01&clotheType=Overall&eyeType=Default&eyebrowType=SadConcernedNatural&facialHairColor=BlondeGolden&facialHairType=BeardMagestic&hairColor=Auburn&mouthType=Serious&skinColor=Yellow&topType=LongHairFrida" alt="">
-                  <div class="tooltip">
-                    <h6>Barb Dwyer</h6>
-                    <ul class="skills">
-                      <li>
-                        <span class="name">Skill: <strong>59</strong></span>
-                        <div class="progress positive"><span style="width:59%"></span></div>
-                      </li>
-                      <li>
-                        <span class="name">Fatigue: <strong>38</strong></span>
-                        <div class="progress negative"><span style="width:38%"></span></div>
-                      </li>
-                      <li>
-                        <span class="name">Looks: <strong>8</strong></span>
-                        <div class="progress positive"><span style="width:8%"></span></div>
-                      </li>
-                      <li>
-                        <span class="name">Creativity: <strong>18</strong></span>
-                        <div class="progress positive"><span style="width:18%"></span></div>
-                      </li>
-                      <li>
-                        <span class="name">Ego: <strong>72</strong></span>
-                        <div class="progress negative"><span style="width:72%"></span></div>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li>
-                  <img src="http://avataaars.io/?accessoriesType=Prescription01&avatarStyle=Transparent&clotheColor=PastelYellow&clotheType=BlazerSweater&eyeType=Default&eyebrowType=UnibrowNatural&facialHairColor=BrownDark&facialHairType=Blank&hairColor=BlondeGolden&mouthType=Eating&skinColor=Brown&topType=ShortHairSides" alt="">
+                    <div class="tooltip">
+                      <h6>Barb Dwyer</h6>
+                      <ul class="skills">
+                        <li>
+                          <span class="name">Skill: <strong>59</strong></span>
+                          <div class="progress positive"><span style="width:59%"></span></div>
+                        </li>
+                        <li>
+                          <span class="name">Fatigue: <strong>38</strong></span>
+                          <div class="progress negative"><span style="width:38%"></span></div>
+                        </li>
+                        <li>
+                          <span class="name">Looks: <strong>8</strong></span>
+                          <div class="progress positive"><span style="width:8%"></span></div>
+                        </li>
+                        <li>
+                          <span class="name">Creativity: <strong>18</strong></span>
+                          <div class="progress positive"><span style="width:18%"></span></div>
+                        </li>
+                        <li>
+                          <span class="name">Ego: <strong>72</strong></span>
+                          <div class="progress negative"><span style="width:72%"></span></div>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <img src="http://avataaars.io/?accessoriesType=Blank&avatarStyle=Transparent&clotheColor=Blue01&clotheType=Overall&eyeType=Default&eyebrowType=SadConcernedNatural&facialHairColor=BlondeGolden&facialHairType=BeardMagestic&hairColor=Auburn&mouthType=Serious&skinColor=Yellow&topType=LongHairFrida" alt="">
+                    <div class="tooltip">
+                      <h6>Barb Dwyer</h6>
+                      <ul class="skills">
+                        <li>
+                          <span class="name">Skill: <strong>59</strong></span>
+                          <div class="progress positive"><span style="width:59%"></span></div>
+                        </li>
+                        <li>
+                          <span class="name">Fatigue: <strong>38</strong></span>
+                          <div class="progress negative"><span style="width:38%"></span></div>
+                        </li>
+                        <li>
+                          <span class="name">Looks: <strong>8</strong></span>
+                          <div class="progress positive"><span style="width:8%"></span></div>
+                        </li>
+                        <li>
+                          <span class="name">Creativity: <strong>18</strong></span>
+                          <div class="progress positive"><span style="width:18%"></span></div>
+                        </li>
+                        <li>
+                          <span class="name">Ego: <strong>72</strong></span>
+                          <div class="progress negative"><span style="width:72%"></span></div>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <img src="http://avataaars.io/?accessoriesType=Prescription01&avatarStyle=Transparent&clotheColor=PastelYellow&clotheType=BlazerSweater&eyeType=Default&eyebrowType=UnibrowNatural&facialHairColor=BrownDark&facialHairType=Blank&hairColor=BlondeGolden&mouthType=Eating&skinColor=Brown&topType=ShortHairSides" alt="">
 
-                  <div class="tooltip">
-                    <h6>Barb Dwyer</h6>
-                    <ul class="skills">
-                      <li>
-                        <span class="name">Skill: <strong>59</strong></span>
-                        <div class="progress positive"><span style="width:59%"></span></div>
-                      </li>
-                      <li>
-                        <span class="name">Fatigue: <strong>38</strong></span>
-                        <div class="progress negative"><span style="width:38%"></span></div>
-                      </li>
-                      <li>
-                        <span class="name">Looks: <strong>8</strong></span>
-                        <div class="progress positive"><span style="width:8%"></span></div>
-                      </li>
-                      <li>
-                        <span class="name">Creativity: <strong>18</strong></span>
-                        <div class="progress positive"><span style="width:18%"></span></div>
-                      </li>
-                      <li>
-                        <span class="name">Ego: <strong>72</strong></span>
-                        <div class="progress negative"><span style="width:72%"></span></div>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
+                    <div class="tooltip">
+                      <h6>Barb Dwyer</h6>
+                      <ul class="skills">
+                        <li>
+                          <span class="name">Skill: <strong>59</strong></span>
+                          <div class="progress positive"><span style="width:59%"></span></div>
+                        </li>
+                        <li>
+                          <span class="name">Fatigue: <strong>38</strong></span>
+                          <div class="progress negative"><span style="width:38%"></span></div>
+                        </li>
+                        <li>
+                          <span class="name">Looks: <strong>8</strong></span>
+                          <div class="progress positive"><span style="width:8%"></span></div>
+                        </li>
+                        <li>
+                          <span class="name">Creativity: <strong>18</strong></span>
+                          <div class="progress positive"><span style="width:18%"></span></div>
+                        </li>
+                        <li>
+                          <span class="name">Ego: <strong>72</strong></span>
+                          <div class="progress negative"><span style="width:72%"></span></div>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="about">
+                <h1>Flexitarian Slow Carb</h1>
+                <h2>Dance: Ambient</h2>
+                <h3><u>892</u> fans, <u>604</u> buzz</h3>
+              </div>
+            </div>
+          </section>
+          <section class="actions">
+            <div class="action_items">
+              <a href="#"><b>Practice</b> <span>Improves the skill level of each member</span></a>
+              <a href="#"><b>Gig</b> <span>Gain fans and make money</span></a>
+              <a href="#"><b>Write</b> <span>Needed to play gigs and grow fans</span></a>
+              <a href="#"><b>Record</b> <span>Gets a song ready to release</span></a>
+              <a href="#"><b>Release</b> <span>Put your song out there to make money</span></a>
+              <a href="#"><b>Rest</b> <span>Too fatigued? Bad things will happen</span></a>
+            </div>
+            <div class="choices">
+              <h4>How long would you like to practice?</h4>
+              <h5>The longer you practice the more skill points you may receive</h5>
+              <ul>
+                <li><a href="#">5 minutes</a></li>
+                <li><a href="#">15 minutes</a></li>
+                <li><a href="#">30 minutes</a></li>
+                <li><a href="#">1 hour</a></li>
               </ul>
             </div>
-            <div class="about">
-              <h1>Flexitarian Slow Carb</h1>
-              <h2>Dance: Ambient</h2>
-              <h3><u>892</u> fans, <u>604</u> buzz</h3>
+          </section>
+          <section class="activities">
+            <div class="releases">
+              <div class="latest">
+                <h5>Latest Release</h5>
+                <div class="release">
+                  <div class="album-art" data-seed="a"  data-size="70"></div>
+                  <div class="details">
+                    <h6>Goth Keytar <small>43</small></h6>
+                    <span>April 20, 2018</span>
+                  </div>
+                </div>
+              </div>
+              <div class="popular">
+                <h5>Popular Releases</h5>
+                <div class="release">
+                  <div class="album-art" data-seed="a" data-size="40"></div>
+                  <div class="details">
+                    <h6>Goth Keytar <small>43</small></h6>
+                    <span>1,582,194</span>
+                  </div>
+                </div>
+                <div class="release">
+                  <div class="album-art" data-seed="e" data-size="40"></div>
+                  <div class="details">
+                    <h6>Brunch Kale Chips <small>29</small></h6>
+                    <span>981,291</span>
+                  </div>
+                </div>
+                <div class="release">
+                  <div class="album-art" data-seed="f" data-size="40"></div>
+                  <div class="details">
+                    <h6>Mixtape Ramps <small>43</small></h6>
+                    <span>498,512</span>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-        </section>
-        <section class="actions">
-          <ul class="action_items">
-            <li><a href="#"><b>Practice</b> <span>Improves the skill level of each member</span></a></li>
-            <li><a href="#"><b>Gig</b> <span>Gain fans and make money</span></a></li>
-            <li><a href="#"><b>Write</b> <span>Needed to play gigs and grow fans</span></a></li>
-            <li><a href="#"><b>Record</b> <span>Gets a song ready to release</span></a></li>
-            <li><a href="#"><b>Release</b> <span>Put your song out there to make money</span></a></li>
-            <li><a href="#"><b>Rest</b> <span>Too fatigued? Bad things will happen</span></a></li>
-          </ul>
-          <div class="choices">
-            <h4>How long would you like to practice?</h4>
-            <h5>The longer you practice the more skill points you may receive</h5>
-            <ul>
-              <li><a href="#">5 minutes</a></li>
-              <li><a href="#">15 minutes</a></li>
-              <li><a href="#">30 minutes</a></li>
-              <li><a href="#">1 hour</a></li>
-            </ul>
-          </div>
-        </section>
-
+            <div class="items">
+              <nav>
+                <ul class="tabs">
+                  <li><a href="#" class="active" data-tab="tab-news">News</a></li>
+                  <li><a href="#" data-tab="tab-songs">Songs</a></li>
+                  <li><a href="#" data-tab="tab-recordings">Recordings</a></li>
+                </ul>
+              </nav>
+              <div class="tab-content news active" id="tab-news">
+                <ol>
+                  <li class="event">
+                    <time>Less than 1 minute ago</time>
+                    <ol>
+                      <li class="type-positive">Sandy C. Shore's skill increased by 1</li>
+                      <li class="type-negative">Sandy C. Shore's fatigue increased by 2 </li>
+                    </ol>
+                  </li>
+                  <li class="event">
+                    <time>19 hours ago</time>
+                    <ol>
+                      <li class="type-positive">Sandy C. Shore's fatigue decreased by 100</li>
+                    </ol>
+                  </li>
+                  <li class="event">
+                  <time>20 hours ago</time>
+                    <ol>
+                      <li class="type-positive">You gained 15 new fans and 100 buzz at your gig!</li>
+                      <li class="type-positive">You made §500 from 50 people at your gig!</li>
+                    </ol>
+                  </li>
+                </ol>
+              </div>
+              <div class="tab-content songs" id="tab-songs">
+                YO SONGS
+              </div>
+              <div class="tab-content recordings" id="tab-recordings">
+                YO RECORDINGS
+              </div>
+            </div>
+          </section>
+          <section class="gigs">
+            <h5>Gigs</h5>
+            <ol class="gig-listing">
+              <li>
+                <div class="cal"><strong>APR</strong><span>29</span></div>
+                <div class="info">
+                  <h6>The Hole</h6>
+                  <p>50 attendees, 33 new fans</p>
+                </div>
+              </li>
+              <li>
+                <div class="cal"><strong>APR</strong><span>29</span></div>
+                <div class="info">
+                  <h6>The Hole</h6>
+                  <p>50 attendees, 33 new fans</p>
+                </div>
+              </li>
+              <li>
+                <div class="cal"><strong>APR</strong><span>29</span></div>
+                <div class="info">
+                  <h6>The Hole</h6>
+                  <p>50 attendees, 33 new fans</p>
+                </div>
+              </li>
+              <li>
+                <div class="cal"><strong>APR</strong><span>29</span></div>
+                <div class="info">
+                  <h6>The Hole</h6>
+                  <p>50 attendees, 33 new fans</p>
+                </div>
+              </li>
+              <li>
+                <div class="cal"><strong>APR</strong><span>29</span></div>
+                <div class="info">
+                  <h6>The Hole</h6>
+                  <p>50 attendees, 33 new fans</p>
+                </div>
+              </li>
+            </ol>
+          </section>
+        </div>
       </div>
     </div>
   </body>
