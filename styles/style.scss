@@ -1,17 +1,17 @@
-@import 'reset.css';
+@import "reset.css";
 @import "media-queries";
 
-$black: #212B38;
+$black: #212b38;
 $white: #fff;
-$green: #4ECD84;
-$blue: #6BDBFF;
-$skyblue: #E5F4F8;
-$bluegray: #CBE5EC;
-$teal: #4ECDC4;
-$yellow: #FFE66D;
-$gray: #F2F2F2;
-$lightgray: #F9F9F9;
-$red: #FF6B6B;
+$green: #4ecd84;
+$blue: #6bdbff;
+$skyblue: #e5f4f8;
+$bluegray: #cbe5ec;
+$teal: #4ecdc4;
+$yellow: #ffe66d;
+$gray: #f2f2f2;
+$lightgray: #f9f9f9;
+$red: #ff6b6b;
 
 body {
   font-family: sofia-pro-soft, Arial, sans-serif;
@@ -27,7 +27,7 @@ body {
   margin: 0 auto;
 }
 
-header[role=banner] {
+header[role="banner"] {
   display: grid;
   grid-template-columns: 2fr 8fr 1fr;
   grid-column-gap: 0;
@@ -44,8 +44,8 @@ header[role=banner] {
     margin-top: 10px;
     a {
       display: block;
-      width: 133px;
-      height: 27px;
+      width: 132px;
+      height: 26px;
       background: url("/images/logo.svg");
       background-size: cover;
       text-indent: 100%;
@@ -131,7 +131,7 @@ header[role=banner] {
       height: 75px;
       background: $bluegray;
       border-radius: 20px;
-      
+
       box-shadow: 0 0 0 5px $skyblue;
       .progress {
         background: $green;
@@ -145,7 +145,7 @@ header[role=banner] {
         span {
           font-weight: bold;
           text-align: center;
-          font-size: .8em;
+          font-size: 0.8em;
           display: block;
           position: absolute;
           bottom: 5px;
@@ -341,14 +341,18 @@ header[role=banner] {
     p {
       margin: 0;
       font-weight: 300;
-      font-size: .9em;
+      font-size: 0.9em;
     }
   }
 }
 
 @keyframes showTooltip {
-  from {opacity: 0;}
-  to {opacity: 1;}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .tooltip {
@@ -389,7 +393,7 @@ header[role=banner] {
     list-style: none;
     margin: 0;
     padding: 0 14px 10px 14px;
-    font-size: .7em;
+    font-size: 0.7em;
     font-weight: 300;
     li {
       margin-bottom: 5px;
@@ -421,7 +425,7 @@ header[role=banner] {
 }
 
 .actions {
-  background: #F5FBFC;
+  background: #f5fbfc;
   margin: 20px;
   padding: 15px;
   border-radius: 8px;
@@ -434,7 +438,7 @@ header[role=banner] {
     list-style: none;
     margin: 0;
     padding: 10px;
-    grid-row: row;
+    // grid-row: row;
     display: grid;
     grid-gap: 10px;
     grid-template-columns: repeat(2, 1fr);
@@ -458,16 +462,15 @@ header[role=banner] {
         font-size: 1.8em;
       }
       span {
-        font-size: .9em;
+        font-size: 0.9em;
       }
     }
-
   }
   .choices {
     grid-column: 2;
-    grid-row: row;
+    // grid-row: row;
     text-align: center;
-    
+
     h4 {
       margin: 0;
       padding: 0;
@@ -518,7 +521,8 @@ section.activities {
     font-size: 1.7em;
     margin: 0 0 8px 0;
   }
-  .latest, .popular {
+  .latest,
+  .popular {
     margin-bottom: 40px;
     .release {
       display: grid;
@@ -553,7 +557,7 @@ section.activities {
         }
         span {
           margin: 0;
-          font-size: .75em;
+          font-size: 0.75em;
         }
       }
     }
@@ -573,7 +577,7 @@ section.activities {
         span {
           justify-content: end;
           text-align: right;
-          font-size: .9em;
+          font-size: 0.9em;
           font-weight: bold;
         }
       }
@@ -613,9 +617,9 @@ section.activities {
       padding: 20px 0 0 10px;
       ol {
         margin: 0;
-        padding:0;
+        padding: 0;
         list-style: none;
-        font-size: .75em;
+        font-size: 0.75em;
         .event {
           position: relative;
           time {
@@ -629,10 +633,9 @@ section.activities {
               height: 1px;
               top: 8px;
               z-index: -100;
-              content: '';
+              content: "";
             }
           }
-
         }
         li {
           font-weight: 700;
@@ -648,7 +651,7 @@ section.activities {
             line-height: 1.65em;
             position: relative;
             &:before {
-              content: '';
+              content: "";
               display: block;
               position: absolute;
               top: 0;
@@ -693,7 +696,7 @@ section.gigs {
         background: $red;
         color: $white;
         border-radius: 4px 4px 0 0;
-        font-size: .7em;
+        font-size: 0.7em;
         padding: 4px 0;
       }
       span {
@@ -713,7 +716,7 @@ section.gigs {
       }
       p {
         margin: 0;
-        font-size: .8em;
+        font-size: 0.8em;
       }
     }
   }

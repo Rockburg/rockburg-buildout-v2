@@ -3,68 +3,68 @@ body {
   font-family: sofia-pro-soft, Arial, sans-serif;
   font-weight: 400;
   font-style: normal;
-  background: #E5F4F8;
+  background: #e5f4f8;
   padding: 0 50px 50px 50px;
-  color: #212B38; }
+  color: #212b38; }
 
 .wrapper {
   max-width: 1300px;
   margin: 0 auto; }
 
-header[role=banner] {
+header[role="banner"] {
   display: grid;
   grid-template-columns: 2fr 8fr 1fr;
   grid-column-gap: 0;
   position: relative;
   margin: 0 20px;
   padding-bottom: 10px; }
-  header[role=banner] a {
-    color: #212B38; }
-  header[role=banner] .logo {
+  header[role="banner"] a {
+    color: #212b38; }
+  header[role="banner"] .logo {
     display: flex;
     justify-content: start;
     align-items: center;
     margin-top: 10px; }
-    header[role=banner] .logo a {
+    header[role="banner"] .logo a {
       display: block;
-      width: 133px;
-      height: 27px;
+      width: 132px;
+      height: 26px;
       background: url("/images/logo.svg");
       background-size: cover;
       text-indent: 100%;
       white-space: nowrap;
       overflow: hidden; }
-  header[role=banner] nav {
+  header[role="banner"] nav {
     display: flex;
     justify-content: center;
     align-items: center; }
-    header[role=banner] nav ul {
+    header[role="banner"] nav ul {
       margin: 0;
       padding: 0; }
-    header[role=banner] nav li {
+    header[role="banner"] nav li {
       display: inline;
       margin: 0 22px; }
-    header[role=banner] nav a {
+    header[role="banner"] nav a {
       text-decoration: none;
       padding: 12px 0;
       display: inline-block;
       font-weight: bold;
       font-size: 1.2em; }
-      header[role=banner] nav a.active {
-        border-top: 3px solid #6BDBFF; }
-      header[role=banner] nav a:hover {
-        border-top: 3px solid #4ECD84; }
-  header[role=banner] .aux {
+      header[role="banner"] nav a.active {
+        border-top: 3px solid #6bdbff; }
+      header[role="banner"] nav a:hover {
+        border-top: 3px solid #4ecd84; }
+  header[role="banner"] .aux {
     position: absolute;
     right: 0;
     top: 0; }
-    header[role=banner] .aux .balance {
+    header[role="banner"] .aux .balance {
       font-size: 1.3em;
       font-weight: bold;
       margin-top: 16px;
       margin-right: 38px;
       line-height: 21px; }
-      header[role=banner] .aux .balance .currency {
+      header[role="banner"] .aux .balance .currency {
         display: inline-block;
         width: 25px;
         height: 25px;
@@ -73,33 +73,33 @@ header[role=banner] {
         text-indent: 100%;
         white-space: nowrap;
         overflow: hidden; }
-    header[role=banner] .aux .hq {
+    header[role="banner"] .aux .hq {
       position: absolute;
       top: 60px;
       right: -5px;
       z-index: 2; }
-      header[role=banner] .aux .hq a {
-        background: #212B38;
+      header[role="banner"] .aux .hq a {
+        background: #212b38;
         border-radius: 100px;
-        border: 4px solid #E5F4F8;
+        border: 4px solid #e5f4f8;
         width: 40px;
         height: 40px;
         text-align: center;
         color: white;
         display: block;
         line-height: 40px; }
-    header[role=banner] .aux .xp {
+    header[role="banner"] .aux .xp {
       position: absolute;
       right: -35px;
       top: 112px;
       border: 2px solid white;
       width: 25px;
       height: 75px;
-      background: #CBE5EC;
+      background: #cbe5ec;
       border-radius: 20px;
-      box-shadow: 0 0 0 5px #E5F4F8; }
-      header[role=banner] .aux .xp .progress {
-        background: #4ECD84;
+      box-shadow: 0 0 0 5px #e5f4f8; }
+      header[role="banner"] .aux .xp .progress {
+        background: #4ecd84;
         color: white;
         display: block;
         height: 50%;
@@ -107,29 +107,29 @@ header[role=banner] {
         bottom: 0;
         width: 100%;
         border-radius: 50px; }
-        header[role=banner] .aux .xp .progress span {
+        header[role="banner"] .aux .xp .progress span {
           font-weight: bold;
           text-align: center;
-          font-size: .8em;
+          font-size: 0.8em;
           display: block;
           position: absolute;
           bottom: 5px;
           width: 100%; }
-    header[role=banner] .aux .avatar {
+    header[role="banner"] .aux .avatar {
       position: absolute;
       top: 10px;
       right: -55px; }
-      header[role=banner] .aux .avatar a {
-        border: 4px solid #E5F4F8;
+      header[role="banner"] .aux .avatar a {
+        border: 4px solid #e5f4f8;
         border-radius: 100px;
         display: block;
         line-height: 0; }
-        header[role=banner] .aux .avatar a:hover {
-          border-color: #212B38; }
-      header[role=banner] .aux .avatar img {
+        header[role="banner"] .aux .avatar a:hover {
+          border-color: #212b38; }
+      header[role="banner"] .aux .avatar img {
         width: 75px;
         height: 75px;
-        background: #6BDBFF;
+        background: #6bdbff;
         border-radius: 100px; }
 
 .shell {
@@ -151,7 +151,7 @@ header[role=banner] {
   padding: 50px; }
   .band-listing .band {
     text-decoration: none;
-    color: #212B38; }
+    color: #212b38; }
     .band-listing .band:hover {
       cursor: pointer; }
       .band-listing .band:hover .status {
@@ -160,11 +160,11 @@ header[role=banner] {
           background: #ffdf44; }
     .band-listing .band .status {
       border-radius: 10px;
-      background: #4ECD84;
+      background: #4ecd84;
       overflow: hidden; }
       .band-listing .band .status.active {
         border-radius: 15px 15px 0 0;
-        background: #FFE66D; }
+        background: #ffe66d; }
     .band-listing .band .info {
       padding: 20px; }
     .band-listing .band h3 {
@@ -189,7 +189,7 @@ header[role=banner] {
         .band-listing .band ul li img {
           width: 33%; }
     .band-listing .band .action {
-      background: #212B38;
+      background: #212b38;
       color: #fff;
       border-radius: 0 0 15px 15px;
       text-align: center;
@@ -199,13 +199,13 @@ header[role=banner] {
         font-weight: bold; }
 
 .profile-header {
-  background: #6BDBFF;
+  background: #6bdbff;
   padding-top: 10px;
   padding-right: 25px;
   padding-left: 10px;
   border-radius: 20px 20px 0 0; }
   .profile-header.band-profile {
-    background: #CBE5EC;
+    background: #cbe5ec;
     padding-top: 30px; }
     .profile-header.band-profile .band-avatar {
       place-self: end start; }
@@ -259,7 +259,7 @@ header[role=banner] {
     .profile-header .info p {
       margin: 0;
       font-weight: 300;
-      font-size: .9em; }
+      font-size: 0.9em; }
 
 @keyframes showTooltip {
   from {
@@ -301,7 +301,7 @@ header[role=banner] {
     list-style: none;
     margin: 0;
     padding: 0 14px 10px 14px;
-    font-size: .7em;
+    font-size: 0.7em;
     font-weight: 300; }
     .tooltip .skills li {
       margin-bottom: 5px; }
@@ -310,21 +310,21 @@ header[role=banner] {
         padding: 0;
         margin: 0 0 2px 0; }
   .tooltip .progress {
-    background: #F2F2F2;
+    background: #f2f2f2;
     border-radius: 10px;
     height: 6px;
     padding: 0;
     margin: 0; }
     .tooltip .progress span {
-      background: #6BDBFF;
+      background: #6bdbff;
       display: block;
       height: 6px;
       border-radius: 10px; }
     .tooltip .progress.negative span {
-      background: #FF6B6B; }
+      background: #ff6b6b; }
 
 .actions {
-  background: #F5FBFC;
+  background: #f5fbfc;
   margin: 20px;
   padding: 15px;
   border-radius: 8px;
@@ -336,7 +336,6 @@ header[role=banner] {
     list-style: none;
     margin: 0;
     padding: 10px;
-    grid-row: row;
     display: grid;
     grid-gap: 10px;
     grid-template-columns: repeat(2, 1fr);
@@ -344,7 +343,7 @@ header[role=banner] {
     .actions .action_items a {
       color: white;
       text-decoration: none;
-      background: #4ECD84;
+      background: #4ecd84;
       padding: 20px 15px;
       border-radius: 8px;
       border: 3px solid #4db479;
@@ -357,10 +356,9 @@ header[role=banner] {
         display: block;
         font-size: 1.8em; }
       .actions .action_items a span {
-        font-size: .9em; }
+        font-size: 0.9em; }
   .actions .choices {
     grid-column: 2;
-    grid-row: row;
     text-align: center; }
     .actions .choices h4 {
       margin: 0;
@@ -386,7 +384,7 @@ header[role=banner] {
           text-decoration: none;
           font-weight: bold;
           font-size: 1.2em;
-          background: #6BDBFF;
+          background: #6bdbff;
           border: 3px solid #5fcef2;
           box-shadow: 0 3px 0 #5fcef2; }
           .actions .choices ul li a:hover {
@@ -403,40 +401,46 @@ section.activities {
     font-weight: bold;
     font-size: 1.7em;
     margin: 0 0 8px 0; }
-  section.activities .latest, section.activities .popular {
+  section.activities .latest,
+  section.activities .popular {
     margin-bottom: 40px; }
-    section.activities .latest .release, section.activities .popular .release {
+    section.activities .latest .release,
+    section.activities .popular .release {
       display: grid;
       grid-template-columns: 1fr 10fr;
       grid-column-gap: 20px;
       align-items: center;
       margin-bottom: 10px; }
-      section.activities .latest .release .album-art, section.activities .popular .release .album-art {
+      section.activities .latest .release .album-art,
+      section.activities .popular .release .album-art {
         display: block;
         width: 70px;
         height: 70px;
-        background: #4ECDC4;
+        background: #4ecdc4;
         border-radius: 4px;
         overflow: hidden;
         position: relative; }
-      section.activities .latest .release .details h6, section.activities .popular .release .details h6 {
+      section.activities .latest .release .details h6,
+      section.activities .popular .release .details h6 {
         margin: 0;
         font-size: 1.4em;
         font-weight: 900;
         line-height: 0.8em; }
-        section.activities .latest .release .details h6 small, section.activities .popular .release .details h6 small {
+        section.activities .latest .release .details h6 small,
+        section.activities .popular .release .details h6 small {
           position: relative;
           top: -2px;
-          background: #212B38;
+          background: #212b38;
           color: #fff;
           padding: 2px 5px 3px 5px;
           font-size: 0.5em;
           border-radius: 4px; }
-      section.activities .latest .release .details span, section.activities .popular .release .details span {
+      section.activities .latest .release .details span,
+      section.activities .popular .release .details span {
         margin: 0;
-        font-size: .75em; }
+        font-size: 0.75em; }
   section.activities .popular .release {
-    border-bottom: 1px solid #F2F2F2;
+    border-bottom: 1px solid #f2f2f2;
     padding-bottom: 10px; }
     section.activities .popular .release .album-art {
       width: 40px;
@@ -448,7 +452,7 @@ section.activities {
       section.activities .popular .release .details span {
         justify-content: end;
         text-align: right;
-        font-size: .9em;
+        font-size: 0.9em;
         font-weight: bold; }
   section.activities .items nav {
     display: flex;
@@ -465,21 +469,21 @@ section.activities {
       text-decoration: none;
       display: inline-block;
       line-height: 1.2em;
-      color: #212B38;
+      color: #212b38;
       font-weight: 900;
       color: rgba(33, 43, 56, 0.5); }
       section.activities .items nav a.active {
-        border-bottom: 3px solid #6BDBFF;
+        border-bottom: 3px solid #6bdbff;
         color: #212b38; }
       section.activities .items nav a:hover {
-        border-bottom: 3px solid #4ECD84; }
+        border-bottom: 3px solid #4ecd84; }
   section.activities .items .news {
     padding: 20px 0 0 10px; }
     section.activities .items .news ol {
       margin: 0;
       padding: 0;
       list-style: none;
-      font-size: .75em; }
+      font-size: 0.75em; }
       section.activities .items .news ol .event {
         position: relative; }
         section.activities .items .news ol .event time {
@@ -488,12 +492,12 @@ section.activities {
           section.activities .items .news ol .event time:before {
             display: block;
             position: absolute;
-            border-bottom: 1px solid #F2F2F2;
+            border-bottom: 1px solid #f2f2f2;
             width: 100%;
             height: 1px;
             top: 8px;
             z-index: -100;
-            content: ''; }
+            content: ""; }
       section.activities .items .news ol li {
         font-weight: 700;
         margin-bottom: 12px; }
@@ -507,7 +511,7 @@ section.activities {
           line-height: 1.65em;
           position: relative; }
           section.activities .items .news ol li li:before {
-            content: '';
+            content: "";
             display: block;
             position: absolute;
             top: 0;
@@ -515,7 +519,7 @@ section.activities {
             width: 4px;
             height: 18px;
             border-radius: 10px;
-            background: #4ECD84; }
+            background: #4ecd84; }
 
 section.gigs {
   padding: 0 30px 30px 30px; }
@@ -534,20 +538,20 @@ section.gigs {
       display: grid;
       grid-template-columns: 1fr 5fr;
       grid-column-gap: 20px;
-      border-bottom: 1px solid #F2F2F2;
+      border-bottom: 1px solid #f2f2f2;
       padding-bottom: 10px; }
     section.gigs .gig-listing .cal {
       text-align: center; }
       section.gigs .gig-listing .cal strong {
         display: block;
-        background: #FF6B6B;
+        background: #ff6b6b;
         color: #fff;
         border-radius: 4px 4px 0 0;
-        font-size: .7em;
+        font-size: 0.7em;
         padding: 4px 0; }
       section.gigs .gig-listing .cal span {
         display: block;
-        background: #F9F9F9;
+        background: #f9f9f9;
         border-radius: 0 0 4px 4px;
         font-weight: 900;
         font-size: 1.3em;
@@ -558,7 +562,7 @@ section.gigs {
       font-size: 1.2em; }
     section.gigs .gig-listing .info p {
       margin: 0;
-      font-size: .8em; }
+      font-size: 0.8em; }
 
 .tab-content {
   display: none; }
